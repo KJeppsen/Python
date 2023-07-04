@@ -1,0 +1,92 @@
+print("Welcome to my FFXIV quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("All questions will be based in FFXIV 6.4")
+score = 0
+answer = input("How many combat jobs are in the game? ")
+if answer == "19":
+    print("Correct!")
+    score += 1
+elif answer.lower() == "nineteen":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 19")
+
+answer = input("How many DoH/DoL jobs are in the game? ")
+if answer == "11":
+    print("Correct!")
+    score += 1
+elif answer.lower() == "eleven":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 11")
+
+answer = input("What's the max amount of Gil a player can own? ")
+if answer == "999999999":
+    print("Correct!")
+    score += 1
+elif answer == "999,999,999":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 999,999,999")
+
+answer = input("What object is used to take off glamour from an item? ")
+if answer.lower() == "glamour dispeller":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Glamour Dispeller")
+
+answer = input("Who is the oppossing force of Hydaelyn? ")
+if answer.lower() == "zodiark":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Zodiark")
+
+answer = input("What is it called when your mind has been wiped by a Primal? ")
+if answer.lower() == "tempered":
+    print("Correct!")
+    score += 1
+elif answer.lower() == "tempering":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect! The answer is Tempered")
+
+answer = input("How many floors are in Palace of The Dead? ")
+if answer == "200":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 200")
+
+answer = input("What do you need to rank up in the Bozjan Southern Front? ")
+if answer.lower() == "mettle":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Mettle")
+
+answer = input("What is the full name of the currency obtained from The Gold Saucer? ")
+if answer.lower() == "manderville gold saucer points":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Manderville Gold Saucer Points")
+
+answer = input("What is the name of the song from the fight with Nidhogg? ")
+if answer.lower() == "dragonsong":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Dragonsong")
+
+print("You got "+ str(score) + "/10 questions correct!")
